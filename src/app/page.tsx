@@ -40,50 +40,52 @@ export default function Home() {
       <main className="mx-auto flex min-h-screen max-w-5xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
         <div className="flex w-full flex-col gap-8 lg:flex-row lg:gap-10">
           {/* 왼쪽 프로필 사이드바 */}
-          <aside className="w-full shrink-0 rounded-2xl border border-zinc-200 bg-white px-5 py-6 text-sm shadow-sm dark:border-zinc-800 dark:bg-zinc-900/70 sm:px-6 sm:py-7 lg:sticky lg:top-10 lg:h-fit lg:w-80">
+          <aside className="w-full shrink-0 rounded-2xl border border-zinc-200 bg-white px-6 py-7 text-base shadow-sm dark:border-zinc-800 dark:bg-zinc-900/70 sm:px-7 sm:py-8 lg:sticky lg:top-10 lg:h-fit lg:w-96">
             <div className="flex flex-col gap-4">
               <div className="flex flex-col items-start gap-4">
                 <div className="flex items-center gap-4">
-                  <div className="h-24 w-24 overflow-hidden rounded-full border border-zinc-200 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800">
+                  <div className="h-28 w-28 overflow-hidden rounded-full border border-zinc-200 bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800">
                     <Image
-                      src="/profile-placeholder.svg"
+                      src="/profile.png"
                       alt="프로필 사진"
-                      width={96}
-                      height={96}
+                      width={112}
+                      height={112}
                       className="h-full w-full object-cover"
                       priority
                     />
                   </div>
                   <div>
-                    <p className="text-xs font-medium uppercase tracking-[0.25em] text-zinc-500 dark:text-zinc-400">
+                    <p className="text-sm font-medium uppercase tracking-[0.25em] text-zinc-500 dark:text-zinc-400">
                       Profile
                     </p>
-                    <h1 className="mt-1 text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
+                    <h1 className="mt-1 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
                       손준호
                     </h1>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                      (준호님의 닉네임이나 한 줄 별명을 넣어도 좋아요)
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                      (Junoshon)
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-3 space-y-1 text-xs text-zinc-700 dark:text-zinc-300">
+              <div className="mt-3 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
                 <p className="font-medium">Email</p>
                 <p className="break-words text-zinc-600 dark:text-zinc-300">
-                  your.email@example.com
+                  sanolx30@gmail.com
                 </p>
-                <p className="mt-3 text-[11px] text-zinc-500 dark:text-zinc-400">
-                  휴대전화나 메신저 대신, 이메일로 연락을 받는다고 안내 문구를 넣을 수 있어요.
+                <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+                  언제든지 자유롭게 연락해 주세요.
                 </p>
               </div>
 
-              <div className="mt-4 space-y-1 text-xs text-zinc-700 dark:text-zinc-300">
+              <div className="mt-4 space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
                 <p className="font-medium">Links</p>
-                <ul className="mt-3 flex gap-3 text-xs">
+                <ul className="mt-3 flex gap-3 text-sm">
                   <li>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/%EC%A4%80%ED%98%B8-%EC%86%90-6992432b3/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label="LinkedIn"
                       className="flex h-9 w-9 items-center justify-center rounded-full border border-zinc-200 bg-white text-[11px] font-medium text-zinc-700 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
                     >
@@ -113,24 +115,24 @@ export default function Home() {
               </div>
 
               <div className="mt-4">
-                <p className="text-xs font-medium text-zinc-700 dark:text-zinc-200">
+                <p className="text-sm font-medium text-zinc-700 dark:text-zinc-200">
                   Skill Keywords
                 </p>
-                <div className="mt-2 flex flex-wrap gap-1.5 text-[11px]">
+                <div className="mt-2 flex flex-wrap gap-1.5 text-xs">
                   <span className="rounded-full bg-zinc-100 px-2 py-1 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200">
-                    JavaScript
+                    AWS
                   </span>
                   <span className="rounded-full bg-zinc-100 px-2 py-1 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200">
-                    TypeScript
+                    Kubernetes
                   </span>
                   <span className="rounded-full bg-zinc-100 px-2 py-1 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200">
-                    React
+                    Docker
                   </span>
                   <span className="rounded-full bg-zinc-100 px-2 py-1 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200">
-                    Next.js
+                    Terraform
                   </span>
                   <span className="rounded-full bg-zinc-100 px-2 py-1 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-200">
-                    Tailwind CSS
+                    Linux
                   </span>
                 </div>
               </div>
@@ -138,25 +140,25 @@ export default function Home() {
           </aside>
 
           {/* 오른쪽 메인 콘텐츠 */}
-          <section className="flex-1 space-y-10 text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
+          <section className="flex-1 space-y-10 text-base leading-relaxed text-zinc-800 dark:text-zinc-200">
             {/* INTRODUCE */}
             <section className="space-y-3">
-              <h2 className="text-base font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
+              <h2 className="text-lg font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
                 INTRODUCE
               </h2>
-              <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
-                웹/앱 서비스 프론트엔드 개발자로서, 사용자가 편하게 정보를 얻을 수 있는
-                인터페이스를 만드는 것에 관심이 많습니다. React, Next.js, TypeScript 등을
-                사용해 실제로 배포 가능한 서비스를 만들고, 유지보수하기 쉬운 UI 구조와
-                패턴을 고민합니다.
+              <p className="text-base leading-relaxed text-zinc-800 dark:text-zinc-200">
+                온프레미스 및 클라우드 인프라 관리자로서, 안정적이고 확장 가능한 인프라 구축과
+                운영에 관심이 많습니다. AWS, Kubernetes, Docker 등을 활용해 서비스의 가용성과
+                성능을 최적화하고, Infrastructure as Code를 통해 효율적인 인프라 관리 방식을
+                추구합니다.
               </p>
-              <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
-                사이드 프로젝트나 학습용 프로젝트를 통해 새로운 라이브러리와 아키텍처를
-                실험해 보는 것을 좋아합니다. 배운 내용을 정리해서 공유하거나, 다른 개발자와
-                함께 코드 리뷰를 하면서 성장하는 과정도 중요하게 생각합니다.
+              <p className="text-base leading-relaxed text-zinc-800 dark:text-zinc-200">
+                모니터링, 자동화, 보안 등 인프라 운영의 전반적인 영역을 다루며, 장애 대응과
+                성능 튜닝을 통해 서비스의 안정성을 높이는 것을 목표로 합니다. 새로운 클라우드
+                기술과 DevOps 도구를 학습하고 실무에 적용하는 것을 좋아합니다.
               </p>
-              <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
-                이 페이지는 기술 블로그가 아니라, 제가 어떤 개발자인지 한눈에 볼 수 있는
+              <p className="text-base leading-relaxed text-zinc-800 dark:text-zinc-200">
+                이 페이지는 기술 블로그가 아니라, 제가 어떤 인프라 관리자인지 한눈에 볼 수 있는
                 온라인 이력서를 목표로 합니다. 사용자는 복잡하게 클릭하지 않고, 스크롤만
                 천천히 내려도 제 경험과 기술 스택을 자연스럽게 읽을 수 있습니다.
               </p>
@@ -164,34 +166,33 @@ export default function Home() {
 
             {/* EXPERIENCE */}
             <section className="space-y-4">
-              <h2 className="text-base font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
+              <h2 className="text-lg font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
                 EXPERIENCE
               </h2>
 
               <article className="space-y-1 rounded-xl border border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900/60 sm:px-5 sm:py-4">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <div>
-                    <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
+                    <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-50">
                       회사 / 팀 이름
                     </h3>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                      Frontend Developer
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                      Infrastructure / Cloud Administrator
                     </p>
                   </div>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400">
                     20XX.XX – 현재
                   </p>
                 </div>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-zinc-700 dark:text-zinc-300 sm:text-sm">
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300 sm:text-base">
                   <li>
-                    어떤 서비스(또는 제품)의 프론트엔드 개발을 담당했는지 간단히 적어주세요.
+                    온프레미스 및 클라우드 인프라 설계, 구축, 운영을 담당했습니다.
                   </li>
                   <li>
-                    구체적으로 개선한 지표나, 담당한 핵심 기능이 있다면 bullet 로 정리하면 좋습니다.
+                    Kubernetes 클러스터 관리, 컨테이너 오케스트레이션, CI/CD 파이프라인 구축 및 운영.
                   </li>
                   <li>
-                    사용한 주요 기술 스택(React, Next.js, TypeScript 등)을 함께 적어두면
-                    읽는 사람이 역할을 더 잘 이해할 수 있습니다.
+                    Terraform, Ansible 등을 활용한 Infrastructure as Code 구현 및 자동화.
                   </li>
                 </ul>
               </article>
@@ -199,19 +200,19 @@ export default function Home() {
               <article className="space-y-1 rounded-xl border border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900/60 sm:px-5 sm:py-4">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <div>
-                    <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
+                    <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-50">
                       다른 경험 / 활동
                     </h3>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
                       Intern / Personal Project 등
                     </p>
                   </div>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400">
                     20XX.XX – 20XX.XX
                   </p>
                 </div>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-zinc-700 dark:text-zinc-300 sm:text-sm">
-                  <li>스터디, 동아리, 인턴, 해커톤 등 개발 관련 경험을 정리해 주세요.</li>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300 sm:text-base">
+                  <li>인프라 관련 스터디, 세미나, 커뮤니티 활동 등을 정리해 주세요.</li>
                   <li>
                     어떤 역할을 맡았고, 무엇을 배웠는지 한 줄씩 써 주면 이력서 느낌이 잘 납니다.
                   </li>
@@ -221,61 +222,92 @@ export default function Home() {
 
             {/* PROJECT */}
             <section className="space-y-4">
-              <h2 className="text-base font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
-                PROJECT
+              <h2 className="text-lg font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
+                Side Team
               </h2>
 
               <article className="space-y-1 rounded-xl border border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900/60 sm:px-5 sm:py-4">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <div>
-                    <h3 className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
-                      juno-blog-web
+                    <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-50">
+                      <a
+                        href="https://nangman.cloud/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        낭만 인프라
+                      </a>
                     </h3>
-                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                      개인 기술 블로그 & 이력서 웹
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                      국립한밭대학교 인프라 엔지니어링 팀
                     </p>
                   </div>
-                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400">
                     2025 – 진행 중
                   </p>
                 </div>
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-zinc-700 dark:text-zinc-300 sm:text-sm">
-                  <li>Next.js 16, React 19, TypeScript, Tailwind CSS 기반으로 개발.</li>
-                  <li>스크롤만으로 전체 이력을 읽을 수 있는 단일 페이지 레이아웃 설계.</li>
-                  <li>프로젝트와 경험을 정리해 온라인 포트폴리오로 활용하는 것을 목표로 함.</li>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-zinc-700 dark:text-zinc-300 sm:text-base">
+                  <li>온프레미스 및 클라우드 인프라 설계, 구축, 운영을 담당하는 팀 프로젝트.</li>
+                  <li>Kubernetes, Docker, AWS 등을 활용한 인프라 관리 및 자동화.</li>
+                  <li>모니터링, 로깅, CI/CD 파이프라인 구축 및 운영.</li>
                 </ul>
               </article>
+
             </section>
 
             {/* SKILL */}
             <section className="space-y-4">
-              <h2 className="text-base font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
+              <h2 className="text-lg font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
                 SKILL
               </h2>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="space-y-2 rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900/60">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
-                    Front-end
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
+                    Cloud / Infrastructure
                   </p>
-                  <ul className="mt-1 space-y-1 text-xs text-zinc-700 dark:text-zinc-300 sm:text-sm">
-                    <li>React / Next.js</li>
-                    <li>TypeScript</li>
-                    <li>HTML / CSS / Tailwind CSS</li>
+                  <ul className="mt-1 space-y-1 text-sm text-zinc-700 dark:text-zinc-300 sm:text-base">
+                    <li>AWS / Azure / GCP</li>
+                    <li>Kubernetes / Docker</li>
+                    <li>Linux / Shell Scripting</li>
                   </ul>
                 </div>
 
                 <div className="space-y-2 rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900/60">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
-                    Tools
+                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
+                    DevOps / Tools
                   </p>
-                  <ul className="mt-1 space-y-1 text-xs text-zinc-700 dark:text-zinc-300 sm:text-sm">
-                    <li>Git / GitHub</li>
-                    <li>pnpm</li>
-                    <li>ESLint / Prettier</li>
+                  <ul className="mt-1 space-y-1 text-sm text-zinc-700 dark:text-zinc-300 sm:text-base">
+                    <li>Terraform / Ansible</li>
+                    <li>CI/CD (Jenkins / GitLab CI)</li>
+                    <li>Monitoring (Prometheus / Grafana)</li>
                   </ul>
                 </div>
               </div>
+            </section>
+
+            {/* CERTIFIED */}
+            <section className="space-y-4">
+              <h2 className="text-lg font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
+                CERTIFIED
+              </h2>
+
+              <article className="space-y-1 rounded-xl border border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-900/60 sm:px-5 sm:py-4">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <div>
+                    <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-50">
+                      자격증 이름
+                    </h3>
+                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                      발급 기관
+                    </p>
+                  </div>
+                  <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                    20XX.XX
+                  </p>
+                </div>
+              </article>
             </section>
 
             {/* ETC */}
