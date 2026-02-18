@@ -259,7 +259,7 @@ export default function Home() {
             {/* SKILL */}
             <section className="space-y-4">
               <h2 className="text-lg font-semibold uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
-                SKILL
+                SKILLLLLLLL
               </h2>
 
               <div className="grid gap-4 sm:grid-cols-2">
